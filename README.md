@@ -4,7 +4,7 @@ CLI for [`contributors-gen`](https://github.com/Yash-Singh1/contributors-gen).
 
 ## CLI
 
-Install
+Install:
 
 ```sh
 npm install --global contributors-gen-cli
