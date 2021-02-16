@@ -16,7 +16,7 @@
   "author": "Yash Singh",
   "license": "MIT",
   "dependencies": {
-    "contributors-gen": "^1.0.0",
+    "contributors-gen": "^1.1.0",
     "meow": "^9.0.0"
   },
   "man": [
