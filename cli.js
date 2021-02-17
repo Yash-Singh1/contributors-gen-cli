@@ -2,6 +2,10 @@
 
 const run = require('contributors-gen');
 const meow = require('meow');
+const updateNotifier = require('update-notifier');
+const pkg = require('./package.json');
+
+updateNotifier({pkg}).notify();
 
 const cli = meow(
   `
