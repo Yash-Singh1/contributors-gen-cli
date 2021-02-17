@@ -1,6 +1,6 @@
 {
   "name": "contributors-gen-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CLI for contributors-gen",
   "main": "cli.js",
   "bin": {
@@ -26,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/Yash-Singh1/contributors-gen-cli/issues"
   },
-  "browser": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Yash-Singh1/contributors-gen-cli"
