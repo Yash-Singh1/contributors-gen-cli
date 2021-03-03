@@ -10,12 +10,12 @@ updateNotifier({ pkg }).notify();
 const cli = meow(
   `
 Usage
-  $ contributors-gen -[wfbc] <comments>
+  $ contributors-gen -[wfbcs] <comments>
 
 Options
-  --write, -w            Write the output to the file
+  --write, -w            Write the output to the file        (default: false)
   --file, -f <filename>  The filename to write the output to (default: CONTRIBUTORS)
-  --bots, -b             Whether to include bots or not
+  --bots, -b             Whether to include bots or not      (default: false)
 
 Examples
   $ contributors-gen -w
