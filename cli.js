@@ -5,7 +5,7 @@ const meow = require('meow');
 const updateNotifier = require('update-notifier');
 const pkg = require('./package.json');
 
-updateNotifier({pkg}).notify();
+updateNotifier({ pkg }).notify();
 
 const cli = meow(
   `
@@ -43,19 +43,19 @@ Examples
       write: {
         type: 'boolean',
         alias: 'w',
-        default: false,
+        default: false
       },
       file: {
         type: 'string',
         alias: 'f',
-        default: 'CONTRIBUTORS',
+        default: 'CONTRIBUTORS'
       },
       bots: {
         type: 'boolean',
         alias: 'b',
-        default: false,
-      },
-    },
+        default: false
+      }
+    }
   }
 );
 
@@ -63,7 +63,7 @@ const results = run({
   write: cli.flags.write,
   file: cli.flags.file,
   bots: cli.flags.bots,
-  comments: cli.input,
+  comments: cli.input
 });
 
 results.then((value) => {
