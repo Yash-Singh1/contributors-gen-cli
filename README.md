@@ -15,4 +15,7 @@ Using:
 ```sh
 # Read the man page
 man contributors-gen
+
+# OR Look at the help output
+contributors-gen --help
 ```
