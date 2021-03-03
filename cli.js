@@ -16,6 +16,7 @@ Options
   --write, -w            Write the output to the file        (default: false)
   --file, -f <filename>  The filename to write the output to (default: CONTRIBUTORS)
   --bots, -b             Whether to include bots or not      (default: false)
+  --sort, -s             The sorting style to be used        (default: abc)
 
 Examples
   $ contributors-gen -w
@@ -54,6 +55,11 @@ Examples
         type: 'boolean',
         alias: 'b',
         default: false
+      },
+      sort: {
+        type: 'string',
+        alias: 's',
+        default: 'abc'
       }
     }
   }
@@ -63,6 +69,7 @@ const results = run({
   write: cli.flags.write,
   file: cli.flags.file,
   bots: cli.flags.bots,
+  sort: cli.flags.sort,
   comments: cli.input
 });
 
