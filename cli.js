@@ -46,12 +46,12 @@ Examples
         alias: 'w',
         default: false
       },
-      file: {
+      fileName: {
         type: 'string',
         alias: 'f',
         default: 'CONTRIBUTORS'
       },
-      bots: {
+      includeBots: {
         type: 'boolean',
         alias: 'b',
         default: false
@@ -67,8 +67,8 @@ Examples
 
 const results = run({
   write: cli.flags.write,
-  file: cli.flags.file,
-  bots: cli.flags.bots,
+  fileName: cli.flags.fileName,
+  includeBots: cli.flags.includeBots,
   sort: cli.flags.sort,
   comments: cli.input
 });
