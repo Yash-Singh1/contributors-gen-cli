@@ -30,5 +30,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Yash-Singh1/contributors-gen-cli"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.0",
+    "nyc": "^15.1.0",
+    "require-inject": "^1.4.4"
+  },
+  "scripts": {
+    "test": "nyc --reporter=lcov --reporter=text-summary mocha"
   }
 }

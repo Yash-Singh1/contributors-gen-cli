@@ -2,6 +2,10 @@
 node_modules/
 package-lock.json
 
+# Code coverage
+.nyc_output/
+coverage/
+
 # Editor config
 .vscode/
 .idea/
